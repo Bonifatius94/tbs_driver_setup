@@ -6,17 +6,22 @@ if [ $(id -g) -ne 0 ]; then
 fi
 
 gcc --version
-if [ $? -ne 0 ];
-    apt-get update && apt-get install -y gcc-8 g++-8
+if [ $? -ne 0 ]; then
+    apt-get update && apt-get install -y build-essential
+fi
+
+make --version
+if [ $? -ne 0 ]; then
+    apt-get update && apt-get install -y make
 fi
 
 dpgk -s patchutils
-if [ $? -ne 0 ];
+if [ $? -ne 0 ]; then
     apt-get update && apt-get install -y patchutils
 fi
 
 dpgk -s libproc-processtable-perl
-if [ $? -ne 0 ];
+if [ $? -ne 0 ]; then
     apt-get update && apt-get install -y libproc-processtable-perl
 fi
 

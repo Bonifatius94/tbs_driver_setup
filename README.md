@@ -16,8 +16,13 @@ git clone https://github.com/Bonifatius94/tbs_driver_setup.git
 cd tbs_driver_setup
 
 # run the main script
-./setup_tbs.sh
+sudo ./setup_tbs.sh $USER
 ```
+
+## Disclaimer
+I don't own rights on the firmware file in the firmware folder. It's an
+official TBS download that became unavailable, so I decided to provide it.
+In case the owner wants me to take the file down, please let me know.
 
 ## License
 This software is available under the terms of the MIT license.
