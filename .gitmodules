@@ -1,0 +1,6 @@
+[submodule "ubuntu_24_04_1/media"]
+	path = ubuntu_24_04_1/media
+	url = https://github.com/tbsdtv/linux_media
+[submodule "ubuntu_24_04_1/media_build"]
+	path = ubuntu_24_04_1/media_build
+	url = https://github.com/tbsdtv/media_build
